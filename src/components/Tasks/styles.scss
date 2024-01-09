@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+
+.tasks-component{
+    background-color: $white-color;
+    // padding: 1rem  ;
+
+    width: 100%;
+    //  width: calc(50% - 1rem );
+     
+    //  @include breakpoint-large{
+
+    //   width: 100%;
+    //   }
+    
+      @include breakpoint-small{
+        background-color: $beige-color;
+    }
+    h2{
+        color:$green-color;
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+    .clear{
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        font-weight: bold;
+        color: $gray-color;
+        margin-left: 1rem;
+        
+
+        .tasks{
+            font-size: 1.5rem;
+           color: $black-color;
+            margin-right:5px ;
+            cursor: pointer;
+        }
+    
+    }
+    
+}

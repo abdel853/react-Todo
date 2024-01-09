@@ -1,0 +1,38 @@
+
+$title-font: 'Gloock', sans-serif;
+$body-font:'Labrada', serif;
+
+
+$red-color:#DC143C;
+$green-color: #026440;
+$lightgreen-color:#3cb043;
+$white-color:#FFFFFF;
+$silver-color:#C0C0C0;
+$gray-color:#808080;
+$black-color:#343434;
+$beige-color:#FFFAF0;
+$yellow-color:#Ffff00;
+$aqua-color:aquamarine;
+$mauve-color:#F0E6FF;
+
+
+
+@mixin breakpoint($max-width){
+    @media only screen and (max-width: $max-width){
+        @content;
+    }
+}
+
+
+@mixin breakpoint-small{
+    @include breakpoint(400px){
+        @content;
+    }
+}
+
+@mixin breakpoint-large{
+    @include breakpoint(900px){
+        @content;
+    }
+}
+

@@ -1,0 +1,105 @@
+@import '../../styles/variables.scss';
+
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;    
+    background-color:$white-color;
+    
+
+        @include breakpoint-small{
+            background-color: $beige-color;  
+        }
+
+    .form-validate{
+        color:$red-color;
+        border: dashed 1px $red-color;
+        border-left-width: 7px;
+        padding:1rem 2rem;
+        font-weight: bold;
+         font-size:0.8rem;
+
+        @include breakpoint-small{
+              font-size: 0.6rem;
+        }
+    }
+    
+    
+
+
+    .add-task{
+        border: solid 1px $gray-color;
+        padding:  1rem;
+        margin: 1rem ;
+
+        @include breakpoint-small{
+            background-color: $yellow-color;
+        }
+            
+        .description{
+            display: flex;
+            width: 100%;
+            color:$white-color;
+            justify-content: center;
+            padding: 5px 0 5px ;
+            margin-bottom: 10px;
+            background-color: $red-color;   
+        }
+
+
+        label{
+             display: flex;    
+             align-items: center;
+             justify-content: flex-end;
+             padding-bottom: 10px;
+             font-size: 1rem;
+
+             @include breakpoint-small{
+                font-size: 0.7rem;
+             }
+
+        input[type='text'],
+        select{
+         box-sizing: border-box;
+         width: 80%;
+         font-size: 1rem;
+         padding: 5px;
+         color: $lightgreen-color;
+         margin-left: 10px;
+
+         @include breakpoint-small{
+            font-size: 0.7rem;
+            width:75%;
+         }
+
+        
+        }
+    }
+
+    button{
+        margin-left: 20%;
+        width: 60px;
+        padding: 5px;
+
+        @include breakpoint-small{
+            margin-left: 25%;
+        }
+        cursor: pointer;
+
+         color:$white-color;
+         background-color: $green-color;
+        border: none;
+        svg{
+            color:$white-color;
+            background-color: $green-color;
+        }
+        
+    }
+    }
+
+ 
+
+    
+}

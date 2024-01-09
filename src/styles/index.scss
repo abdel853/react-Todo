@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Labrada:wght@100;400&display=swap');
+ @import './variables.scss';
+
+
+
+body {
+margin: 0;
+font-family: $body-font;// here we set the font that comes from variables.scss
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+
+html,
+body{
+  height: 100%;
+}
+#root{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  @include breakpoint-small{
+    background-color: $beige-color;  
+}
+
+  }
+
+h1{
+    color:$green-color;
+     margin : 0 1rem;   
+}
+ 
+article{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 1rem;
+  }
+main.page{
+    padding-top: 2rem;
+
+    flex: 1;
+    // background-color: aqua;
+    .container{
+        margin: 0rem;
+
+        .help.div{
+            // color: $secondary-color;
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+
+    } 
+
+    @include breakpoint-small{
+      background-color: $beige-color;  
+  }
+
+         
+}
+
+.form-validate{
+  color:$red-color;
+  border: dashed 1px $red-color;
+  border-left-width: 7px;
+  padding:1rem 2rem;
+  margin: 1rem;
+  font-weight: bold;
+   font-size:0.8rem;
+
+  @include breakpoint-small{
+        font-size: 0.6rem;
+  }
+}
